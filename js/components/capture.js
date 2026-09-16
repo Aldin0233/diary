@@ -1,4 +1,4 @@
-```js
+
 import { Button } from "./ui.js";
 
 
@@ -39,4 +39,4 @@ export function QuickCapture({
     </section>
   `;
 }
-```
+

@@ -1,4 +1,3 @@
-```js
 export function ContextBlock({
   label,
   content,
@@ -156,4 +155,4 @@ export function ContextPanel(context) {
     </aside>
   `;
 }
-```
+

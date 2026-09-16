@@ -1,4 +1,4 @@
-```js
+
 import { AppShell } from "../components/layout.js";
 import { QuickCapture } from "../components/capture.js";
 import { Timeline } from "../components/timeline.js";
@@ -82,4 +82,3 @@ export function ProjectPage({
     main,
   });
 }
-```

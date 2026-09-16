@@ -1,4 +1,4 @@
-```js
+
 import {
   Badge,
   StatusIndicator,
@@ -104,4 +104,4 @@ export function Timeline(days) {
     </section>
   `;
 }
-```
+

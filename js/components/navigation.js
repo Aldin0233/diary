@@ -1,4 +1,4 @@
-```js
+
 import { Button } from "./ui.js";
 
 
@@ -88,4 +88,4 @@ export function Sidebar({
     </aside>
   `;
 }
-```
+

@@ -1,4 +1,4 @@
-```js
+
 import { Sidebar } from "./navigation.js";
 import { ContextPanel } from "./context.js";
 
@@ -30,4 +30,4 @@ export function AppShell({
     </div>
   `;
 }
-```
+

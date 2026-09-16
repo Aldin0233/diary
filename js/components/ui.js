@@ -1,4 +1,4 @@
-```js
+
 export function Button({
   text,
   variant = "default",
@@ -45,4 +45,4 @@ export function StatusIndicator({
     </span>
   `;
 }
-```
+

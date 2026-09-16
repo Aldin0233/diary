@@ -1,4 +1,4 @@
-```js
+
 export const projects = [
   {
     id: "my-app",
@@ -95,4 +95,3 @@ export const timeline = [
     ],
   },
 ];
-```
