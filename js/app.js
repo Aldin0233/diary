@@ -1,9 +1,6 @@
-```js
 import { ProjectPage } from "./pages/project.js";
 
-
 const app = document.querySelector("#app");
-
 
 function render() {
   app.innerHTML = ProjectPage({
@@ -13,9 +10,7 @@ function render() {
   bindEvents();
 }
 
-
 function bindEvents() {
-
   /*
    * 프로젝트 선택
    */
@@ -23,20 +18,16 @@ function bindEvents() {
   document
     .querySelectorAll("[data-project-id]")
     .forEach((button) => {
-
       button.addEventListener(
         "click",
         () => {
-
           const projectId =
             button.dataset.projectId;
 
           renderProject(projectId);
         }
       );
-
     });
-
 
   /*
    * 새 프로젝트
@@ -53,7 +44,6 @@ function bindEvents() {
       }
     );
 
-
   /*
    * 기록하기
    */
@@ -66,7 +56,6 @@ function bindEvents() {
     ?.addEventListener(
       "click",
       () => {
-
         const content =
           input.value.trim();
 
@@ -81,7 +70,6 @@ function bindEvents() {
       }
     );
 
-
   /*
    * ⌘ + Enter
    */
@@ -89,7 +77,6 @@ function bindEvents() {
   input?.addEventListener(
     "keydown",
     (event) => {
-
       if (
         event.key === "Enter" &&
         (event.metaKey ||
@@ -101,10 +88,8 @@ function bindEvents() {
           .querySelector("#addButton")
           ?.click();
       }
-
     }
   );
-
 
   /*
    * 취소
@@ -115,12 +100,9 @@ function bindEvents() {
     ?.addEventListener(
       "click",
       () => {
-
         input.value = "";
-
       }
     );
-
 
   /*
    * 기록 선택
@@ -129,11 +111,9 @@ function bindEvents() {
   document
     .querySelectorAll("[data-record-id]")
     .forEach((entry) => {
-
       entry.addEventListener(
         "click",
         () => {
-
           const recordId =
             entry.dataset.recordId;
 
@@ -141,14 +121,10 @@ function bindEvents() {
             "기록 상세:",
             recordId
           );
-
         }
       );
-
     });
-
 }
-
 
 function renderProject(projectId) {
   app.innerHTML = ProjectPage({
@@ -158,6 +134,4 @@ function renderProject(projectId) {
   bindEvents();
 }
 
-
 render();
-```
