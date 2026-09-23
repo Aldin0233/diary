@@ -1,10 +1,8 @@
-
 import { Button } from "./ui.js";
-
 
 export function QuickCapture({
   placeholder = "지금 떠오른 생각을 기록하세요...",
-}) {
+} = {}) {
   return `
     <section class="capture">
 
@@ -39,4 +37,3 @@ export function QuickCapture({
     </section>
   `;
 }
-
